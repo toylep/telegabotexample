@@ -26,35 +26,7 @@ internal class Program
             }
             if (correct)
                     System.IO.File.AppendAllText(namefile, update.Message.From.Id.ToString() + "\n");
-         /*   var message = update.Message;
-            msg = message.Text;
-            if (message.Text.ToLower() == "/start")
-            {
-                await botClient.SendTextMessageAsync(message.Chat, "Дарова,выбери список команд\n 1)мои контакты -/author \n 2)Узнать своё имя - /myname \n 3)Персональное сообщение -/personal");
-            }
-            switch (message.Text.ToLower())
-            {
-                case ("/author"):
-                    await botClient.SendTextMessageAsync(message.Chat, "inst: toylep");
-                    break;
-                case ("/myname"):
-                    await botClient.SendTextMessageAsync(message.Chat, $"{message.From.FirstName}я тебя запомнил");
-                    if (message.From.Username == "akemi_lennoks")
-                        await botClient.SendTextMessageAsync(message.Chat, "Люблю тебя <3");
-                    if (message.From.Username == "dhskizb")
-                        await botClient.SendTextMessageAsync(message.Chat, "Хуле в тачке намусорил?");
-                    break;
-                case ("/personal"):
-                    while(message.Text!="Маланова")
-                    {
-                        await botClient.SendTextMessageAsync(message.Chat, "ты пидор");
-                    }
-                    break;
-                case ("/lottery"): 
-                    
-                    break;
-            }
-         */
+        
         }
     }
 
